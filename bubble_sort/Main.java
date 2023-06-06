@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.stream.IntStream;
 
 public class Main {
-    void bubbleSort(Integer[] arr) {
+    public static void bubbleSort(Integer[] arr) {
         int n = arr.length;
         IntStream.range(0, n - 1)
         .flatMap(i -> IntStream.range(1, n - i))
@@ -14,7 +14,7 @@ public class Main {
                 }
          });
     }
-    private static void printArray(int[] numbers) {
+    private static void printArray(Integer[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
@@ -22,7 +22,7 @@ public class Main {
 
     public static void main(String [] args) {
         Random rand = new Random();
-        int[] numbers = new int[10];
+        Integer[] numbers = new Integer[100000];
 
         for (int i = 0; i < numbers.length; i++) {
         numbers[i] = rand.nextInt(100);
@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Before:");
         printArray(numbers);
 
-        quicksort(numbers);
+        bubbleSort(numbers);
 
         System.out.println("\nAfter:");
         printArray(numbers);
