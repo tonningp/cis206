@@ -2,7 +2,7 @@
 
 Key idea: Java programs communicate through streams. Input streams bring data into the program; output streams send data out.
 
-Core talking points:
+Core points:
 
 `System.out` is the standard output stream.
 `System.in` is the standard input stream.
@@ -219,5 +219,3 @@ Part 2 extends the same concept to persistence: reading data from files, process
 ```text
 input → process → output
 ```
-
-That pattern is the central model students should retain.
