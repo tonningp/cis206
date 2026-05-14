@@ -11,6 +11,11 @@ class Cat extends Animal {
     }
 
     @Override
+    void eat() {
+        System.out.println("The cat named " + getName() + " is eating cat food .");
+    }
+
+    @Override
     void feed() {
         super.feed(); // Call the feed method of the superclass (Animal)
         System.out.println("This cat named " + getName() + " is being fed with cat food.");

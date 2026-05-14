@@ -7,10 +7,12 @@ public class Main {
         Cat c = new Cat("Whiskers", "Siamese", "Cream", "medium");
         Bird b = new Bird("Tweety", "Canary", "Yellow", "small");
         Lizard l = new Lizard("Lizzy", "Anole", "Green", "small", false);
+        Owl o = new Owl("Hootie", "Barn Owl", "White", "medium", true);
         animals.add(d);
         animals.add(c);
         animals.add(b);
         animals.add(l);
+        animals.add(o);
         for (Animal a : animals) {
             System.out.println(a);
             a.feed();

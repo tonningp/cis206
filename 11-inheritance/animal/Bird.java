@@ -10,9 +10,18 @@ class Bird extends Animal {
         System.out.println("The bird chirps.");
     }
 
+    String getSpecies() {
+        return species;
+    }
+
+    @Override
+    void eat() {
+        System.out.println("The bird named " + getName() + " is eating seeds.");
+    }
+
     @Override
     void feed() {
-        super.feed(); // Call the feed method of the superclass (Animal)
+        // super.feed(); // Call the feed method of the superclass (Animal)
         System.out.println("This bird named " + getName() + " is being fed with seeds.");
     }
 

@@ -8,6 +8,11 @@ public class Lizard extends Animal {
         this.isVenomous = isVenomous;
     }
 
+    @Override
+    void eat() {
+        System.out.println("The lizard named " + getName() + " is eating insects and small plants.");
+    }
+
     public boolean isVenomous() {
         return isVenomous;
     }

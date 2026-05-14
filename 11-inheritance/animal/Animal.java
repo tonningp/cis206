@@ -1,4 +1,4 @@
-class Animal extends Object {
+abstract class Animal {
     private String name;
     private String color;
     private String size;
@@ -9,9 +9,7 @@ class Animal extends Object {
         this.size = size;
     }
 
-    void eat() {
-        System.out.println("This animal named " + this.name + " eats food.");
-    }
+    abstract void eat();
 
     void feed() {
         System.out.println("This animal named " + this.name + " is being fed.");
